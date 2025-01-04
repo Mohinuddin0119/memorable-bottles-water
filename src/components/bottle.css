@@ -1,0 +1,33 @@
+.bottle img{
+    width: 200px;
+}
+.bottle{
+    border: 2px solid aqua;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.botttle-container{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+}
+
+@media (max-width:480px){
+    .botttle-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media (min-width:481px) and (max-width:768px){
+    .botttle-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (min-width:769px) and (max-width:1600px){
+    .botttle-container{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
